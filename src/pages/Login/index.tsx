@@ -59,11 +59,11 @@ const LoginPage: React.FC = () => {
         <h1>系统登录</h1>
         <Form name="loginForm" onFinish={handleLogin} autoComplete="off">
           <Form.Item name="username" rules={[{ required: true, message: '请输入用户名！' }]}>
-            <Input prefix={<UserOutlined />} placeholder="请输入用户名" size="large" />
+            <Input prefix={<UserOutlined />} autoComplete={'off'} placeholder="请输入用户名" size="large" />
           </Form.Item>
 
           <Form.Item name="password" rules={[{ required: true, message: '请输入密码！' }]}>
-            <Input.Password prefix={<LockOutlined />} placeholder="请输入密码" size="large" />
+            <Input.Password prefix={<LockOutlined />} autoComplete={'off'} placeholder="请输入密码" size="large" />
           </Form.Item>
 
           <Form.Item>

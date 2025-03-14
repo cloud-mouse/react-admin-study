@@ -32,3 +32,9 @@
   width: 22px;
   overflow: hidden;
 }
+.main-content {
+  padding: 16px;
+  margin: 16px;
+  background: #fff;
+  border-radius: 6px;
+}

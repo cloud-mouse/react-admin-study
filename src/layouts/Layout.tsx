@@ -101,7 +101,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </Space>
           </Dropdown>
         </Header>
-        <Content style={{ margin: '16px' }}>{children}</Content>
+        <Content className="main-content">{children}</Content>
       </AntdLayout>
     </AntdLayout>
   )

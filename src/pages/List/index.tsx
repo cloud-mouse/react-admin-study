@@ -5,6 +5,7 @@ import ItemList from './ItemList'
 import ItemForm from './ItemForm'
 import { Item, initialData } from './data'
 import { Button } from 'antd'
+import './index.css'
 
 const App: React.FC = () => {
   const [data, setData] = useState<Item[]>(initialData)
@@ -42,7 +43,7 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="App">
+    <div className="list-page">
       <h1>用户列表</h1>
       <Button onClick={handleAdd} type="primary" style={{ marginBottom: 16 }}>
         新增
